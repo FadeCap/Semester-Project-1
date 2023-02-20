@@ -15,10 +15,27 @@
   --card-three-color: #a53b3b;
 }
 
-.header {
+body {
+  background-color: var(--background-color);
+}
+
+header {
   background-color: var(--header-footer-color);
   display: flex;
   flex-direction: column;
   height: 120px;
   justify-content: center;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-logo {
+  display: flex;
+  width: 50px;
+  height: 54px;
+  padding-left: 2rem;
+  padding-right: 1rem;
 }
