@@ -13,6 +13,7 @@
   --card-one-color: #5386e4;
   --card-two-color: #1b998b;
   --card-three-color: #a53b3b;
+  --font-color: white;
 }
 
 body {
@@ -23,13 +24,15 @@ header {
   background-color: var(--header-footer-color);
   display: flex;
   flex-direction: column;
-  height: 120px;
+  height: 130px;
   justify-content: center;
+  width: 100%;
 }
 
 .top-header {
   display: flex;
   flex-direction: row;
+  padding-top: 1.5rem;
 }
 
 .header-logo {
@@ -38,4 +41,94 @@ header {
   height: 54px;
   padding-left: 2rem;
   padding-right: 1rem;
+  align-items: right;
+  justify-self: right;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+nav:last-child {
+  margin-right: 1rem;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.nav-dots {
+  width: 4px;
+  height: 4px;
+  display: flex;
+  margin-top: 0.4rem;
+}
+
+footer {
+  display: flex;
+  height: 120px;
+  background-color: var(--header-footer-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: none;
+}
+
+.left-side-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.social-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.facebook-logo,
+.instagram-logo {
+  height: 25px;
+  width: 25px;
+}
+
+.footer-information-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+}
+
+.opening-hours {
+  font-size: 0.6rem;
+  color: var(--font-color);
+  text-decoration: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-line {
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+  height: 10rem;
 }
