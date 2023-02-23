@@ -152,6 +152,12 @@ a:hover {
   .footer {
     align-items: center;
   }
+
+  .nav {
+    align-items: center;
+    max-width: 750px;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 769px) {
