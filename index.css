@@ -2,7 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh, -120px;
+  gap: 0.2rem;
 }
 
 .first-card,
@@ -16,12 +16,24 @@ main {
   margin-top: 1rem;
   background-color: var(--card-one-color);
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--font-color);
   min-width: 304px;
   max-width: 500px;
+  overflow: hidden;
 }
 
-.museum-image {
+.second-card {
+  background-color: var(--card-two-color);
+}
+
+.third-card {
+  background-color: var(--card-three-color);
+}
+
+.card-image {
+  min-width: 0;
   width: 280px;
   height: 167px;
   border-radius: 8px;
@@ -35,6 +47,7 @@ h1 {
 p {
   font-size: 0.9rem;
   font-weight: 500;
+  text-overflow: clip;
 }
 
 .card-text-arrow-container {

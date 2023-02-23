@@ -18,6 +18,9 @@
 
 body {
   background-color: var(--background-color);
+  min-height: 400px;
+  margin-bottom: 130px;
+  clear: both;
 }
 
 header {
@@ -76,12 +79,13 @@ a:hover {
 
 footer {
   display: flex;
-  height: 120px;
+  height: 130px;
   background-color: var(--header-footer-color);
   position: fixed;
   bottom: 0;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-between, center;
+  align-items: center;
 }
 
 .footer-logo {
@@ -93,6 +97,15 @@ footer {
   flex-direction: column;
   padding: 10px;
   justify-content: space-between;
+  width: 50%;
+}
+
+.right-side-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .social-logos {
@@ -112,9 +125,13 @@ footer {
   align-items: center;
   justify-content: center;
   bottom: 10px;
+  color: var(--font-color);
+  font-size: 0.6rem;
+  text-decoration: none;
 }
 
-.opening-hours {
+.opening-hours,
+.contact {
   font-size: 0.6rem;
   color: var(--font-color);
   text-decoration: none;
@@ -122,13 +139,4 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.footer-line {
-  width: 4rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 2rem;
-  height: 10rem;
 }
