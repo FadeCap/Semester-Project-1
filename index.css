@@ -1,10 +1,13 @@
 main {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  height: 100vh, -120px;
 }
 
-.top-card {
+.first-card,
+.second-card,
+.third-card {
   display: flex;
   height: 16rem;
   padding: 0.5rem;
@@ -14,7 +17,8 @@ main {
   background-color: var(--card-one-color);
   flex-direction: column;
   color: var(--font-color);
-  align-items: center;
+  min-width: 304px;
+  max-width: 500px;
 }
 
 .museum-image {
