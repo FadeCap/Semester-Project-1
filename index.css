@@ -1,53 +1,53 @@
-main {
+.card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
+  gap: 1rem;
+  padding: 1rem, 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.first-card,
-.second-card,
-.third-card {
+.card {
   display: flex;
-  height: 16rem;
-  padding: 0.5rem;
+  position: relative;
   border-radius: 8px;
-  margin: 0.5rem;
-  margin-top: 1rem;
   background-color: var(--card-one-color);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: var(--font-color);
-  min-width: 304px;
-  max-width: 500px;
+  width: 304px;
+  padding-bottom: 0.5rem;
   overflow: hidden;
 }
 
-.second-card {
+.bg-green {
   background-color: var(--card-two-color);
 }
 
-.third-card {
+.bg-red {
   background-color: var(--card-three-color);
 }
 
 .card-image {
   min-width: 0;
-  width: 280px;
+  width: 100%;
   height: 167px;
-  border-radius: 8px;
+  object-fit: cover;
 }
 
-h1 {
-  font-size: 1.2rem;
-  font-weight: 700;
+.card-text {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-p {
+.card-text > p {
   font-size: 0.9rem;
   font-weight: 500;
-  text-overflow: clip;
+  max-width: 250px;
+}
+
+.card-text > h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .card-text-arrow-container {
@@ -55,4 +55,21 @@ p {
   justify-content: space-between;
   align-items: flex-end;
   gap: 3rem;
+}
+
+.right-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  .card {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+  }
 }
