@@ -156,9 +156,10 @@ a:hover {
   .bottom-header {
     max-width: 750px;
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 769px) {
+  
 }
