@@ -1,3 +1,7 @@
+.desktop {
+  display: none;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -70,12 +74,83 @@
 }
 
 @media screen and (min-width: 769px) {
-  .card {
-    width: 600px;
+  .mobile {
+    display: none;
   }
-  .card-container {
+
+  .desktop {
+    display: block;
+  }
+
+  .desktop-card-container {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
     gap: 4rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  }
+
+  .bg-museum {
+    background-image: url(/images/scott-webb-102825.jpg);
+    background-position: center;
+  }
+
+  .bg-mammoth {
+    background-image: url(/images/mammoth-reverse.jpg);
+    background-position: top;
+  }
+
+  .bg-ant {
+    background-image: url(images/genoa-956405_1920.jpg);
+    background-position: center;
+  }
+
+  .card {
+    width: 90vw;
+    max-width: 890px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .inner-card {
+    display: flex;
+    background-color: var(--card-one-color);
+    width: 315px;
+    height: 188px;
+    border-radius: 8px;
+    position: absolute;
+    left: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transition: ease 400ms;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: white;
+  }
+  .inner-card:hover {
+    transition: ease 200ms;
+    transform: scale(1.1);
+  }
+
+  .bg-green {
+    background-color: var(--card-two-color);
+  }
+
+  .bg-red {
+    background-color: var(--card-three-color);
+  }
+
+  .inner-card-text {
+    margin-left: 2rem;
+  }
+
+  .inner-card-arrow {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
   }
 }

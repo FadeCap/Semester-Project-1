@@ -129,7 +129,6 @@
   }
 
   .desktop-card-text > p {
-    height: 240px;
     overflow: auto;
     padding-right: 0.6rem;
     text-align: justify;

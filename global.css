@@ -40,16 +40,34 @@ main {
   height: 130px;
   width: 100%;
   align-items: center;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
 }
+
+.logo {
+  display: flex;
+  height: 70px;
+  background-color: #323432;
+  border-radius: 8px;
+}
+
 .csm-text {
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  justify-content: space-between;
+}
+.csm-text > h1 {
+  font-size: 1.25rem;
+  background-color: #323432;
+  border-radius: 0 8px 8px 0;
+  width: 208px;
+  padding: 0.7rem;
+  color: white;
+  font-weight: 300;
 }
 
 a {
+  z-index: 100;
   color: var(--font-color);
   text-decoration: none;
   transition: ease-in-out 200ms;
@@ -74,6 +92,10 @@ a:hover {
   width: 4px;
   height: 4px;
   display: flex;
+}
+
+.h2-text {
+  padding: 1rem 0;
 }
 
 .footer {
@@ -163,6 +185,7 @@ a:hover {
     padding: 0;
     background-color: #323432;
     border-radius: 0 8px 8px 0;
+    align-items: center;
   }
   .nav {
     font-size: 1rem;

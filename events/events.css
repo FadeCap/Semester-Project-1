@@ -45,7 +45,7 @@
   min-width: 0;
   width: 280px;
   height: 167px;
-  object-fit: revert;
+  object-fit: cover;
   border-radius: 8px;
   display: flex;
   justify-content: center;
