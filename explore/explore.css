@@ -5,6 +5,10 @@ h2 {
   color: var(--font-color);
 }
 
+.desktop {
+  display: none;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -12,6 +16,7 @@ h2 {
   padding: 1rem, 0.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .card {
@@ -73,10 +78,4 @@ h2 {
 }
 
 @media screen and (min-width: 769px) {
-  .card {
-    width: 600px;
-  }
-  .nav {
-    width: 600px;
-  }
 }
