@@ -14,9 +14,9 @@
 :root {
   --background-color: #202325;
   --header-footer-color: #272929;
-  --card-one-color: #5386e4;
-  --card-two-color: #1b998b;
-  --card-three-color: #a53b3b;
+  --card-one-color: #0052a3;
+  --card-two-color: #0f6157;
+  --card-three-color: #963636;
   --font-color: white;
   --main-height: calc(100vh - 260px);
 }
@@ -26,6 +26,7 @@ body {
 }
 
 main {
+  position: relative;
   min-height: var(--main-height);
   display: flex;
   flex-direction: column;
@@ -169,6 +170,16 @@ a:hover {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+#top-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 42px;
+  height: 42px;
+  transition: ease 200ms;
+  cursor: pointer;
 }
 
 .footer {
