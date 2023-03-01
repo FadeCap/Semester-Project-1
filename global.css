@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+.active {
+  color: gray;
+}
+
 :root {
   --background-color: #202325;
   --header-footer-color: #272929;
@@ -14,7 +18,7 @@
   --card-two-color: #1b998b;
   --card-three-color: #a53b3b;
   --font-color: white;
-  --main-height: calc(130px - 100vh - 130px);
+  --main-height: calc(100vh - 260px);
 }
 
 body {
@@ -22,64 +26,54 @@ body {
 }
 
 main {
-  min-height: calc(130px - 100vh - 130px);
+  min-height: var(--main-height);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header {
+.header {
+  position: relative;
   background-color: var(--header-footer-color);
   display: flex;
   flex-direction: column;
   height: 130px;
-  justify-content: center;
   width: 100%;
+  align-items: center;
 }
-
-.top-header {
+.csm-text {
   display: flex;
-  flex-direction: row;
-  padding-top: 1.5rem;
-}
-
-.header-logo {
-  display: flex;
-  width: 50px;
-  height: 54px;
-  padding-left: 2rem;
-  padding-right: 1rem;
-  align-items: right;
-  justify-self: right;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  margin: 1rem;
   justify-content: space-between;
-  font-size: 12px;
-}
-
-nav:last-child {
-  margin-right: 1rem;
+  width: 100%;
+  padding-right: 1rem;
+  padding-top: 1rem;
 }
 
 a {
   color: var(--font-color);
   text-decoration: none;
+  transition: ease-in-out 200ms;
 }
 
 a:hover {
   color: gray;
   cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  max-width: 500px;
+  padding-top: 0.7rem;
 }
 
 .nav-dots {
   width: 4px;
   height: 4px;
   display: flex;
-  margin-top: 0.4rem;
 }
 
 .footer {
@@ -155,11 +149,31 @@ a:hover {
 
   .bottom-header {
     max-width: 750px;
-  width: 100%;
-  align-items: flex-end;
-  justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 769px) {
+  .header {
+    flex-direction: row;
+  }
+  .csm-text {
+    width: auto;
+    padding: 0;
+    background-color: #323432;
+    border-radius: 0 8px 8px 0;
+  }
+  .nav {
+    font-size: 1rem;
+  }
 }
 
-@media screen and (min-width: 769px) {
-  
+@media screen and (min-width: 1024px) {
+  .nav {
+    position: absolute;
+    justify-content: center;
+    max-width: none;
+    gap: 2rem;
+  }
 }

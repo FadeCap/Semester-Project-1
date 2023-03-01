@@ -1,5 +1,5 @@
-h1,
-h2 {
+.card-container > h1,
+.card-container > h2 {
   font-size: 1.25rem;
   padding: 1rem;
   color: var(--font-color);
@@ -52,15 +52,14 @@ h2 {
   align-items: center;
 }
 
-.card-text > p {
+.card > p {
   font-size: 0.9rem;
   font-weight: 500;
-  max-width: 250px;
   padding: 0.6rem;
   padding-right: 0;
 }
 
-.card-text > h2 {
+.card > h2 {
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -78,6 +77,68 @@ h2 {
 }
 
 @media screen and (min-width: 769px) {
-  @import url(explore-desktop.html);
-  @import url(explore-desktop.css);
+  .mobile {
+    display: none;
+  }
+
+  .card-container > h1,
+  .card-container > h2 {
+    font-size: 1.25rem;
+    padding: 1rem;
+    color: var(--font-color);
+  }
+
+  .desktop-card-text > h2 {
+    font-size: 1.25rem;
+    color: var(--font-color);
+    margin-bottom: 1rem;
+  }
+
+  .desktop-card-container {
+    padding: 0 2rem;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .desktop-card {
+    background-color: var(--card-one-color);
+    color: var(--font-color);
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 1240px;
+    align-items: center;
+    height: 320px;
+  }
+
+  .bg-green {
+    background-color: var(--card-two-color);
+  }
+
+  .bg-red {
+    background-color: var(--card-three-color);
+  }
+
+  .desktop-card-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 2rem;
+  }
+
+  .desktop-card-text > p {
+    height: 240px;
+    overflow: auto;
+    padding-right: 0.6rem;
+    text-align: justify;
+  }
+
+  .desktop-card-image {
+    width: 20rem;
+    height: 320px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
 }
