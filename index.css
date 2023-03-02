@@ -129,7 +129,7 @@
   }
 
   a:hover {
-    color: white;
+    color: var(--font-color);
   }
   .inner-card:hover {
     transition: ease 200ms;
