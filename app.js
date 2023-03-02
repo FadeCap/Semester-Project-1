@@ -1,10 +1,10 @@
 const toTopButton = document.getElementById("top-button")
+const logo = document.getElementById('logo')
 const sendToTop = () => {
   window.scrollTo({top:0, behavior:'smooth'})
 }
 
 const showButton = () => {
-  console.log(toTopButton.hidden)
   if(window.scrollY > 130) {
     toTopButton.style.opacity = '100'
     toTopButton.style.visibility = 'visible'
@@ -24,5 +24,16 @@ const showButton = () => {
   }
 }
 
+const animateLogo = () => {
+  if (logo.classList.contains('spin')){
+     return;
+    }
+  logo.classList.add('spin');
+  setTimeout(() => {
+    logo.classList.remove('spin')
+  }, 6000);
+}
+
 toTopButton.addEventListener('click', sendToTop)
+logo.addEventListener('mouseenter', animateLogo)
 window.addEventListener('scroll', showButton)

@@ -48,8 +48,27 @@ main {
 .logo {
   display: flex;
   height: 70px;
+  transition: ease-in-out 2s;
+}
+
+.logo-wrapper {
   background-color: #323432;
   border-radius: 8px;
+}
+.spin {
+  animation: spin 6s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  50% {
+    transform: rotateY(360deg) rotateX(180deg);
+  }
+  to {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
 }
 
 .csm-text {
