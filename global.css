@@ -8,7 +8,18 @@
 }
 
 .active {
-  color: gray;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  background-color: var(--font-color);
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -2px;
 }
 
 :root {
@@ -95,9 +106,30 @@ a {
 }
 
 a:hover {
-  color: gray;
   cursor: pointer;
   transition: ease-in-out 200ms;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  background-color: var(--font-color);
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -2px;
+  transition: width ease 200ms;
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transition: width ease 200ms;
 }
 
 .nav {
@@ -107,6 +139,7 @@ a:hover {
   align-items: center;
   max-width: 500px;
   padding-top: 0.7rem;
+  position: relative;
 }
 
 .nav-dots {

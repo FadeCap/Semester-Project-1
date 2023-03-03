@@ -128,9 +128,6 @@
     cursor: pointer;
   }
 
-  a:hover {
-    color: var(--font-color);
-  }
   .inner-card:hover {
     transition: ease 200ms;
     transform: scale(1.1);
