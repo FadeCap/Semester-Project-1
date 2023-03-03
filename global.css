@@ -233,6 +233,7 @@ a:hover {
   height: 42px;
   transition: ease 200ms;
   cursor: pointer;
+  z-index: 100;
 }
 
 .footer {
