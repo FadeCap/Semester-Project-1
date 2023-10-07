@@ -20,8 +20,6 @@ For this project I made a website for a museum with information about different 
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - HTML
 - CSS
 - Javascript
@@ -34,14 +32,6 @@ You can list a the tech stack that you've used over here
 
 ```bash
 git clone git@github.com:FadeCap/Semester-Project-1.git
-```
-
-### Running
-
-To run the app, run the following commands:
-
-```bash
-npm run start
 ```
 
 ## Contributing
