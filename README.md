@@ -4,10 +4,10 @@
 
 ![Semester-Project-1-mobile](https://github.com/FadeCap/Semester-Project-1/assets/116163360/55c20cc6-8ca8-4b2e-a73a-d9aed4459182)
 
-Link to live website: [Hosted on Netlify](https://csm-semesterproj-stian.netlify.app/)
-
 
 Community Science Museum - Website for a museum and information about it
+
+Link to live website: [Hosted on Netlify](https://csm-semesterproj-stian.netlify.app/)
 
 ## Description
 
