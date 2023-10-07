@@ -20,8 +20,10 @@ For this project I made a website for a museum with information about different 
 
 ## Built With
 
-- HTML
-- CSS
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
 - Javascript
 
 ## Getting Started
