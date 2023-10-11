@@ -1,8 +1,8 @@
 # Semester Project 1 | Community Science Museum
 
-![Semester-Project-1-desktop](https://github.com/FadeCap/Semester-Project-1/assets/116163360/182930d0-e4cd-4751-921f-3ed1bce6795c)
+![Semester-Project-1-desktop](https://github.com/FadeCap/Semester-Project-1/assets/116163360/bd6c7da1-03da-413b-8b69-2cd64e871c3b)
 
-![Semester-Project-1-mobile](https://github.com/FadeCap/Semester-Project-1/assets/116163360/55c20cc6-8ca8-4b2e-a73a-d9aed4459182)
+![Semester-Project-1-mobile](https://github.com/FadeCap/Semester-Project-1/assets/116163360/0f086451-a53a-4323-8db5-4f0ca447062a)
 
 
 Community Science Museum - Website for a museum and information about it
